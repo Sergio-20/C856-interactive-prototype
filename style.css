@@ -1,0 +1,140 @@
+/* HTML TAGS: */
+
+body, html {
+    scroll-behavior: smooth;
+}
+
+body {
+	border: 0;
+    box-sizing: content-box;
+    font-family: sans-serif;
+	font-size: 100%;
+    margin: 0;
+    padding: 0;
+	vertical-align: baseline;
+}
+
+a {
+    border-radius: 10px;
+    color: #8CB2FF;
+    line-height: 2rem;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #8CB2FF;
+    color: #fff;
+    text-decoration: underline;
+}
+
+header {
+    border-bottom: 1px solid #333;
+    padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 2rem;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+ol li, ul li {
+    line-height: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+
+/* IDs */
+#CTAForm {
+    border: 3px solid rgba(140,178,255, 0.5);
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#CTAForm input, #CTAForm textarea {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+#hamburgerMenu:hover {
+    cursor: pointer;
+}
+
+#headingMenuText {
+    color: #333;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+#navComponentsContainer {
+    display: none;
+}
+
+#siteMenu {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#siteMenu .fa-xmark {
+    color: red;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+
+/* Classes */
+
+.btnCTA {
+    border: 1px dotted #8CB2FF;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.btnCtaAlt {
+    background-color: #8CB2FF;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.navContentHeader {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.navContentHeader p {
+    padding: 0.2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 1080px) 
+{
+    #hamburgerMenu.fa-bars {
+        color: #fff;
+        cursor: pointer;
+        pointer-events: none;
+    }
+
+    #navComponentsContainer
+    {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 1rem;
+    }
+}
